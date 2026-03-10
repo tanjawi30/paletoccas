@@ -12,28 +12,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
-
-<script>
-
-function reveal() {
-let reveals = document.querySelectorAll(".reveal");
-
-for (let i = 0; i < reveals.length; i++) {
-
-let windowHeight = window.innerHeight;
-let elementTop = reveals[i].getBoundingClientRect().top;
-let elementVisible = 150;
-
-if (elementTop < windowHeight - elementVisible) {
-reveals[i].classList.add("active");
-}
-
-}
-}
-
-window.addEventListener("scroll", reveal);
-
-</script>
   
 <body>
 
@@ -63,7 +41,7 @@ La concession d'occasion nouvelle génération à Paleto Bay
 
 </section>
 
-<section id="histoire" class="panel">
+<section id="histoire" class="panel reveal">
 
 <div class="content">
 
@@ -80,7 +58,7 @@ abandonnés ou non réclamés.
 
 </section>
 
-<section id="buts" class="panel">
+<section id="buts" class="panel reveal">
 
 <div class="content">
 
@@ -96,7 +74,7 @@ abandonnés ou non réclamés.
 
 </section>
 
-<section id="activites" class="panel">
+<section id="activites" class="panel reveal">
 
 <div class="content">
 
@@ -112,7 +90,7 @@ Gestion des cartes grises
 
 </section>
 
-<section id="organigramme" class="panel">
+<section id="organigramme" class="panel reveal">
 
 <div class="content">
 
@@ -128,7 +106,7 @@ Employés
 
 </section>
 
-<section id="objectifs" class="panel">
+<section id="objectifs" class="panel reveal">
 
 <div class="content">
 
@@ -144,5 +122,27 @@ Long terme : devenir la référence à Paleto Bay
 
 </section>
 
+<script>
+
+function reveal() {
+let reveals = document.querySelectorAll(".reveal");
+
+for (let i = 0; i < reveals.length; i++) {
+
+let windowHeight = window.innerHeight;
+let elementTop = reveals[i].getBoundingClientRect().top;
+let elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+reveals[i].classList.add("active");
+}
+
+}
+}
+
+window.addEventListener("scroll", reveal);
+
+</script>
+  
 </body>
 </html>
