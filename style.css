@@ -143,3 +143,9 @@ letter-spacing:-2px;
 margin:0;
 line-height:1;
 }
+
+.hero p{
+font-size:clamp(18px,2vw,28px);
+opacity:0.8;
+margin-top:20px;
+}
