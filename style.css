@@ -153,3 +153,49 @@ font-size:clamp(18px,2vw,28px);
 opacity:0.8;
 margin-top:20px;
 }
+
+.hero-title{
+font-family:'Sora',sans-serif;
+font-size:clamp(80px,12vw,180px);
+font-weight:700;
+display:flex;
+gap:5px;
+justify-content:center;
+letter-spacing:-3px;
+}
+
+.hero-title span{
+opacity:0;
+transform:translateY(80px);
+filter:blur(10px);
+animation:revealLetter 0.8s forwards;
+}
+
+.hero-title span:nth-child(1){animation-delay:0.1s}
+.hero-title span:nth-child(2){animation-delay:0.2s}
+.hero-title span:nth-child(3){animation-delay:0.3s}
+.hero-title span:nth-child(4){animation-delay:0.4s}
+.hero-title span:nth-child(5){animation-delay:0.5s}
+.hero-title span:nth-child(6){animation-delay:0.6s}
+.hero-title span:nth-child(7){animation-delay:0.7s}
+.hero-title span:nth-child(8){animation-delay:0.8s}
+.hero-title span:nth-child(9){animation-delay:0.9s}
+.hero-title span:nth-child(10){animation-delay:1s}
+.hero-title span:nth-child(11){animation-delay:1.1s}
+
+@keyframes revealLetter{
+
+to{
+opacity:1;
+transform:translateY(0);
+filter:blur(0);
+}
+}
+
+.hero-title span{
+color:white;
+text-shadow:
+0 0 10px rgba(255,122,0,0.6),
+0 0 20px rgba(255,122,0,0.4),
+0 0 40px rgba(255,122,0,0.3);
+}
