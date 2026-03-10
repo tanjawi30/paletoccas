@@ -92,3 +92,16 @@ font-size:18px;
 line-height:1.6;
 opacity:0.9;
 }
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+font-size:18px;
+color:#ff7a00;
+}
+
+.logo img{
+height:40px;
+}
