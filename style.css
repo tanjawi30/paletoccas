@@ -1,6 +1,6 @@
 body{
 margin:0;
-font-family:'Space Grotesk',sans-serif;
+font-family:'Inter',sans-serif;
 background:#050505;
 color:white;
 overflow-x:hidden;
@@ -53,10 +53,13 @@ background:linear-gradient(120deg,#ff7a00,#ff3c00);
 }
 
 .hero h1{
-font-size:80px;
-margin:0;
-letter-spacing:2px;
+font-family:'Sora',sans-serif;
+font-size:clamp(70px,12vw,160px);
+font-weight:700;
+letter-spacing:-3px;
 }
+
+
 
 .hero p{
 margin-top:20px;
@@ -82,9 +85,10 @@ max-width:700px;
 }
 
 .content h2{
-font-size:50px;
-color:#ff7a00;
-margin-bottom:20px;
+font-family:'Sora',sans-serif;
+font-size:clamp(40px,5vw,70px);
+font-weight:600;
+letter-spacing:-1px;
 }
 
 .content p{
