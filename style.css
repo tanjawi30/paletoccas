@@ -116,3 +116,22 @@ transition:all 1s ease;
 opacity:1;
 transform:translateY(0);
 }
+
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 80px;
+z-index:100;
+transition:0.4s;
+}
+
+.navbar.scrolled{
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(10px);
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
