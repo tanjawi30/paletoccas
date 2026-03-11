@@ -1008,3 +1008,31 @@ transform:scale(1.2);
     height:320px;
   }
 }
+
+.nav-links a.active{
+color:#ff7a00;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+filter:blur(10px);
+transition:all 1s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+filter:blur(0);
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.4);}
+100%{transform:scale(1);}
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#ff7a00;
+}
