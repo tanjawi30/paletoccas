@@ -735,9 +735,10 @@ transition:transform .7s ease;
 }
 
 .map-wrapper:hover .map-image{
-  transform:scale(1.035);
+transform:scale(1.04) rotate(-1deg);
   filter:saturate(1) contrast(1.05) brightness(0.96);
 }
+
 
 .map-glow{
   position:absolute;
