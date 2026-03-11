@@ -1171,3 +1171,7 @@ width:100%;
 }
 
 }
+
+.progress-fill{
+box-shadow:0 0 10px #ff7a00;
+}
