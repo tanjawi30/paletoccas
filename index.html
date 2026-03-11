@@ -309,30 +309,39 @@ Véhicules saisis et non réclamés.</p>
     <p>© Palet'Occas — Caleb Brooks</p>
   </footer>
 
-  <script>
+<script>
 
-function reveal(){
+const navbar = document.getElementById("navbar");
+const reveals = document.querySelectorAll(".reveal");
 
-let reveals = document.querySelectorAll(".reveal");
+function handleScrollEffects(){
 
-for(let i = 0; i < reveals.length; i++){
+  /* NAVBAR */
 
-let windowHeight = window.innerHeight;
-let elementTop = reveals[i].getBoundingClientRect().top;
-let elementVisible = 120;
+  if(window.scrollY > 20){
+    navbar.classList.add("scrolled");
+  } else{
+    navbar.classList.remove("scrolled");
+  }
 
-if(elementTop < windowHeight - elementVisible){
-reveals[i].classList.add("active");
+  /* REVEAL ANIMATION */
+
+  reveals.forEach((el)=>{
+
+    const rect = el.getBoundingClientRect();
+
+    if(rect.top < window.innerHeight - 120){
+      el.classList.add("active");
+    } else{
+      el.classList.remove("active");
+    }
+
+  });
+
 }
-else{
-reveals[i].classList.remove("active");
-}
 
-}
-
-}
-
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", handleScrollEffects);
+window.addEventListener("load", handleScrollEffects);
 
 </script>
 
