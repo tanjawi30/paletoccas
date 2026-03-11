@@ -487,11 +487,8 @@ a{
 .reveal{
   opacity:0;
   transform:translateY(36px);
-  filter:blur(8px);
-  transition:
-    opacity 0.9s ease,
-    transform 0.9s ease,
-    filter 0.9s ease;
+  filter:blur(10px);
+  transition:all 1.2s cubic-bezier(.19,1,.22,1);
 }
 
 .reveal.active{
