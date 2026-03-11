@@ -56,24 +56,50 @@ a{
   background-size:80px 80px;
 }
 
-.navbar{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:22px 36px;
-  z-index:1000;
-  transition:0.35s ease;
+#navbar{
+
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+width:90%;
+max-width:1100px;
+
+padding:14px 24px;
+
+border-radius:18px;
+
+background:rgba(20,20,20,0.55);
+
+backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px);
+
+border:1px solid rgba(255,255,255,0.08);
+
+box-shadow:
+0 10px 40px rgba(0,0,0,0.35),
+0 0 40px rgba(255,122,0,0.04);
+
+transition:all .35s ease;
+
+z-index:1000;
+
 }
 
-.navbar.scrolled{
-  background:rgba(7,7,7,0.72);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(255,255,255,0.06);
-  box-shadow:0 8px 30px rgba(0,0,0,0.24);
+#navbar.scrolled{
+
+background:rgba(15,15,15,0.75);
+
+backdrop-filter:blur(20px);
+
+box-shadow:
+0 12px 50px rgba(0,0,0,0.5);
+
 }
 
 .brand{
@@ -128,6 +154,24 @@ a{
   width:100%;
 }
 
+.nav-links a{
+
+color:#d6d6d6;
+font-weight:500;
+padding:8px 14px;
+border-radius:10px;
+
+transition:all .25s ease;
+
+}
+
+.nav-links a:hover{
+
+color:white;
+
+background:rgba(255,122,0,0.15);
+
+}
 .hero{
   min-height:100vh;
   position:relative;
