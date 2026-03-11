@@ -316,15 +316,11 @@ const reveals = document.querySelectorAll(".reveal");
 
 function handleScrollEffects(){
 
-  /* NAVBAR */
-
   if(window.scrollY > 20){
     navbar.classList.add("scrolled");
   } else{
     navbar.classList.remove("scrolled");
   }
-
-  /* REVEAL ANIMATION */
 
   reveals.forEach((el)=>{
 
@@ -344,10 +340,6 @@ window.addEventListener("scroll", handleScrollEffects);
 window.addEventListener("load", handleScrollEffects);
 
 </script>
-
-    window.addEventListener("scroll", handleScrollEffects);
-    window.addEventListener("load", handleScrollEffects);
-  </script>
 
 <script>
 
