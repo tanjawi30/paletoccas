@@ -578,12 +578,13 @@ a{
 }
 
 .map-wrapper{
-  position:relative;
-  width:100%;
-  min-height:420px;
-  border-radius:32px;
-  overflow:hidden;
-  isolation:isolate;
+position:relative;
+width:100%;
+max-width:900px;
+height:420px;
+margin:0 auto;
+border-radius:32px;
+overflow:visible;
 }
 
 
@@ -600,13 +601,28 @@ a{
 }
 
 .map-glow{
-  position:absolute;
-  inset:-20px;
-  background:radial-gradient(circle, rgba(255,122,0,0.24), transparent 68%);
-  filter:blur(65px);
-  opacity:0.85;
-  z-index:-1;
-  pointer-events:none;
+position:absolute;
+inset:0;
+
+background:radial-gradient(
+circle,
+rgba(255,122,0,0.35),
+transparent 70%
+);
+
+filter:blur(90px);
+
+clip-path:polygon(
+0 8%,
+100% 0,
+100% 92%,
+0 100%
+);
+
+transform:scale(1.15);
+
+z-index:1;
+pointer-events:none;
 }
 
 .map-wrapper:hover .map-image{
@@ -699,17 +715,23 @@ a{
 }
 
 .map-image{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  border-radius:32px;
-  clip-path:polygon(0 8%, 100% 0, 100% 92%, 0 100%);
-  transition:transform 0.7s ease, filter 0.7s ease;
-  filter:saturate(0.95) contrast(1.03) brightness(0.9);
-  position:relative;
-  z-index:2;
-  box-shadow:0 24px 60px rgba(0,0,0,0.45);
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+
+clip-path:polygon(
+0 8%,
+100% 0,
+100% 92%,
+0 100%
+);
+
+border-radius:32px;
+
+z-index:2;
+transition:transform .7s ease;
 }
 
 .map-wrapper:hover .map-image{
