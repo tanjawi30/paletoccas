@@ -343,7 +343,28 @@ function handleScrollEffects(){
 }
 
 window.addEventListener("scroll", handleScrollEffects);
-window.addEventListener("load", handleScrollEffects);
+
+window.addEventListener("load", function(){
+
+const loader = document.getElementById("loader");
+
+setTimeout(()=>{
+
+loader.style.opacity = "0";
+
+setTimeout(()=>{
+
+loader.style.display = "none";
+
+/* relance les animations après le loader */
+
+handleScrollEffects();
+
+},1000);
+
+},4500);
+
+});
 
 </script>
 
