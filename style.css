@@ -1125,6 +1125,10 @@ position:relative;
 /* remplissage */
 
 .progress-fill{
+box-shadow:0 0 10px #ff7a00;
+}
+
+.progress-fill{
 height:100%;
 width:0%;
 background:linear-gradient(
@@ -1146,6 +1150,7 @@ top:0;
 left:0;
 height:100%;
 width:100%;
+
 
 background:repeating-linear-gradient(
 90deg,
@@ -1172,6 +1177,4 @@ width:100%;
 
 }
 
-.progress-fill{
-box-shadow:0 0 10px #ff7a00;
-}
+
