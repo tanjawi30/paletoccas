@@ -1184,4 +1184,10 @@ width:100%;
 
 }
 
+body.hero-start .hero-title span{
+animation-play-state: running;
+}
 
+.hero-title span{
+animation-play-state: paused;
+}
