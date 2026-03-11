@@ -1080,7 +1080,7 @@ top:0;
 width:40%;
 height:100%;
 background:#ff7a00;
-animation:loaderMove 1.2s infinite;
+animation:loaderMove 1.2s infinite;*
 }
 
 @keyframes loaderMove{
@@ -1091,3 +1091,5 @@ left:-40%;
 left:100%;
 }
 }
+
+transition: all 1.2s cubic-bezier(.19,1,.22,1);
