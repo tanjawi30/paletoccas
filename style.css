@@ -739,6 +739,11 @@ transform:scale(1.04) rotate(-1deg);
   filter:saturate(1) contrast(1.05) brightness(0.96);
 }
 
+.map-wrapper:hover .map-glow{
+opacity:1;
+transform:scale(1.2);
+}
+
 
 .map-glow{
   position:absolute;
