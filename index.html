@@ -1,176 +1,274 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palet'Occas</title>
+  <meta name="description" content="Palet'Occas — Concession d'occasion à Paleto Bay" />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-<title>Palet'Occas</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css" />
 </head>
-  
 <body>
 
-<nav class="navbar">
+  <div class="site-bg"></div>
+  <div class="site-noise"></div>
 
-<div class="logo">
-<img src="logo.png" alt="Palet'Occas">
-</div>
+  <header class="navbar" id="navbar">
+    <a href="#top" class="brand">
+      <img src="logo.png" alt="Logo Palet'Occas" />
+      <span>Palet'Occas</span>
+    </a>
 
-<ul>
-<li><a href="#histoire">Histoire</a></li>
-<li><a href="#buts">Buts</a></li>
-<li><a href="#activites">Activités</a></li>
-<li><a href="#organigramme">Équipe</a></li>
-<li><a href="#objectifs">Objectifs</a></li>
-</ul>
+    <nav class="nav-links">
+      <a href="#histoire">Histoire</a>
+      <a href="#buts">Buts</a>
+      <a href="#activites">Activités</a>
+      <a href="#organigramme">Équipe</a>
+      <a href="#objectifs">Objectifs</a>
+    </nav>
+  </header>
 
-</nav>
+  <main id="top">
 
-<section class="hero">
+    <section class="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
 
-<h1 class="hero-title">
-<span>P</span>
-<span>A</span>
-<span>L</span>
-<span>E</span>
-<span>T</span>
-<span>'</span>
-<span>O</span>
-<span>C</span>
-<span>C</span>
-<span>A</span>
-<span>S</span>
-</h1>
+      <div class="hero-inner">
+        <p class="eyebrow reveal">Paleto Bay • Concession d'occasion • Revente de véhicules</p>
 
-<p>
-La concession d'occasion nouvelle génération à Paleto Bay
-</p>
+        <h1 class="hero-title" aria-label="Palet'Occas">
+          <span>P</span>
+          <span>A</span>
+          <span>L</span>
+          <span>E</span>
+          <span>T</span>
+          <span>'</span>
+          <span>O</span>
+          <span>C</span>
+          <span>C</span>
+          <span>A</span>
+          <span>S</span>
+        </h1>
 
-</section>
+        <p class="hero-subtitle reveal">
+          L’occasion nouvelle génération à Paleto Bay.
+        </p>
 
-<section id="histoire" class="panel reveal">
+        <div class="hero-actions reveal">
+          <a href="#histoire" class="btn btn-primary">Découvrir le dossier</a>
+          <a href="#objectifs" class="btn btn-secondary">Voir le projet</a>
+        </div>
 
-<div class="content">
+        <div class="hero-meta reveal">
+          <span>Véhicules d’occasion</span>
+          <span>•</span>
+          <span>Reprises</span>
+          <span>•</span>
+          <span>Cartes grises</span>
+        </div>
+      </div>
+    </section>
 
-<h2>Histoire</h2>
+    <section id="histoire" class="section section-split reveal">
+      <div class="section-label">01</div>
+      <div class="section-content">
+        <p class="section-kicker">Histoire</p>
+        <h2>Une concession utile, crédible et ancrée à Paleto.</h2>
+        <p class="section-text">
+          Palet'Occas est née d’un constat simple : de nombreux véhicules saisis,
+          abandonnés ou non réclamés restent immobilisés alors qu’ils pourraient
+          retrouver une vraie utilité. Le projet vise à leur donner une seconde vie,
+          tout en proposant à la population de Paleto Bay un accès plus simple à des
+          véhicules d’occasion fiables et abordables.
+        </p>
+      </div>
+    </section>
 
-<p>
-Palet'Occas est une concession spécialisée dans la vente de véhicules
-d'occasion située à Paleto Bay.
-Notre objectif est de donner une seconde vie aux véhicules saisis,
-abandonnés ou non réclamés.
-</p>
+    <section id="buts" class="section reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Buts</p>
+        <h2>Une activité pensée pour servir la ville.</h2>
+      </div>
 
-</div>
+      <div class="cards-grid">
+        <article class="glass-card">
+          <p class="card-index">01</p>
+          <h3>Accessibilité</h3>
+          <p>
+            Permettre aux citoyens, nouveaux arrivants et travailleurs de trouver
+            un véhicule à prix plus accessible.
+          </p>
+        </article>
 
-</section>
+        <article class="glass-card">
+          <p class="card-index">02</p>
+          <h3>Seconde vie</h3>
+          <p>
+            Remettre en circulation des véhicules saisis ou oubliés plutôt que de
+            les laisser sans utilité.
+          </p>
+        </article>
 
-<section id="buts" class="panel reveal">
+        <article class="glass-card">
+          <p class="card-index">03</p>
+          <h3>Dynamisme local</h3>
+          <p>
+            Créer un vrai pôle automobile au nord de la ville et renforcer
+            l’attractivité de Paleto Bay.
+          </p>
+        </article>
+      </div>
+    </section>
 
-<div class="content">
+    <section id="activites" class="section reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Activités</p>
+        <h2>Des services simples, utiles et cohérents en RP.</h2>
+      </div>
 
-<h2>Buts</h2>
+      <div class="feature-list">
+        <article class="feature-item">
+          <div class="feature-number">01</div>
+          <div>
+            <h3>Vente de véhicules d’occasion</h3>
+            <p>Commercialisation de véhicules revendus légalement à Paleto Bay.</p>
+          </div>
+        </article>
 
-<p>
-• Rendre les véhicules accessibles  
-• Dynamiser l'économie de Paleto  
-• Donner une seconde vie aux véhicules
-</p>
+        <article class="feature-item">
+          <div class="feature-number">02</div>
+          <div>
+            <h3>Reprise de véhicules</h3>
+            <p>Rachat de véhicules aux citoyens souhaitant vendre rapidement.</p>
+          </div>
+        </article>
 
-</div>
+        <article class="feature-item">
+          <div class="feature-number">03</div>
+          <div>
+            <h3>Gestion administrative</h3>
+            <p>Création des cartes grises et suivi des changements de propriétaire.</p>
+          </div>
+        </article>
 
-</section>
+        <article class="feature-item">
+          <div class="feature-number">04</div>
+          <div>
+            <h3>Valorisation des saisies non réclamées</h3>
+            <p>Réintégration dans le circuit civil de véhicules restés sans propriétaire.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<section id="activites" class="panel reveal">
+    <section id="organigramme" class="section reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Équipe</p>
+        <h2>Une structure claire et efficace.</h2>
+      </div>
 
-<div class="content">
+      <div class="team-grid">
+        <article class="team-card">
+          <h3>Direction</h3>
+          <p>
+            Gestion de l’entreprise, du stock, des relations administratives et de la vision globale.
+          </p>
+        </article>
 
-<h2>Activités</h2>
+        <article class="team-card">
+          <h3>Vendeurs</h3>
+          <p>
+            Accueil clients, négociation, présentation des véhicules et suivi des ventes.
+          </p>
+        </article>
 
-<p>
-Vente de véhicules d'occasion  
-Rachat de véhicules  
-Gestion des cartes grises
-</p>
+        <article class="team-card">
+          <h3>Personnel d’exploitation</h3>
+          <p>
+            Réception des véhicules, préparation, organisation du parc et suivi opérationnel.
+          </p>
+        </article>
+      </div>
+    </section>
 
-</div>
+    <section id="objectifs" class="section reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Objectifs</p>
+        <h2>Une vision à court, moyen et long terme.</h2>
+      </div>
 
-</section>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div>
+            <h3>Court terme</h3>
+            <p>Ouverture officielle, mise en place du parc et premières ventes.</p>
+          </div>
+        </article>
 
-<section id="organigramme" class="panel reveal">
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div>
+            <h3>Moyen terme</h3>
+            <p>Développer le stock, affiner les procédures et renforcer les partenariats.</p>
+          </div>
+        </article>
 
-<div class="content">
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div>
+            <h3>Long terme</h3>
+            <p>Faire de Palet'Occas une référence de l’occasion dans le nord de la ville.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<h2>Équipe</h2>
+    <section class="cta-section reveal">
+      <div class="cta-card">
+        <p class="section-kicker">Conclusion</p>
+        <h2>Un projet simple, moderne et utile pour Paleto Bay.</h2>
+        <p>
+          Palet'Occas apporte une vraie cohérence économique et administrative à la
+          revente de véhicules d’occasion, tout en créant du RP civil, commercial et local.
+        </p>
+        <a href="#top" class="btn btn-primary">Revenir en haut</a>
+      </div>
+    </section>
 
-<p>
-Directeur  
-Vendeurs  
-Employés
-</p>
+  </main>
 
-</div>
+  <footer class="footer">
+    <p>© Palet'Occas — Paleto Bay</p>
+  </footer>
 
-</section>
+  <script>
+    const navbar = document.getElementById("navbar");
+    const reveals = document.querySelectorAll(".reveal");
 
-<section id="objectifs" class="panel reveal">
+    function handleScrollEffects() {
+      if (window.scrollY > 20) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
 
-<div class="content">
+      reveals.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 120) {
+          el.classList.add("active");
+        }
+      });
+    }
 
-<h2>Objectifs</h2>
+    window.addEventListener("scroll", handleScrollEffects);
+    window.addEventListener("load", handleScrollEffects);
+  </script>
 
-<p>
-Court terme : ouverture  
-Moyen terme : développer le parc automobile  
-Long terme : devenir la référence à Paleto Bay
-</p>
-
-</div>
-
-</section>
-
-<script>
-
-function reveal() {
-let reveals = document.querySelectorAll(".reveal");
-
-for (let i = 0; i < reveals.length; i++) {
-
-let windowHeight = window.innerHeight;
-let elementTop = reveals[i].getBoundingClientRect().top;
-let elementVisible = 150;
-
-if (elementTop < windowHeight - elementVisible) {
-reveals[i].classList.add("active");
-}
-
-}
-}
-
-window.addEventListener("scroll", reveal);
-
-</script>
-
-<script>
-
-window.addEventListener("scroll", function(){
-
-let navbar = document.querySelector(".navbar");
-
-if(window.scrollY > 50){
-navbar.classList.add("scrolled");
-}else{
-navbar.classList.remove("scrolled");
-}
-
-});
-
-</script>
-  
 </body>
 </html>
