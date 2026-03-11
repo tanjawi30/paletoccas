@@ -56,7 +56,7 @@
       <div class="hero-inner">
         <p class="eyebrow reveal">Paleto Bay • Concession d'occasion • Revente de véhicules</p>
 
-        <h1 class="hero-title reveal" aria-label="Palet'Occas">
+        <h1 class="hero-title" aria-label="Palet'Occas">
           <span>P</span>
           <span>A</span>
           <span>L</span>
@@ -356,34 +356,16 @@ setTimeout(()=>{
 
 loader.style.display = "none";
 
-/* relance les animations après le loader */
-
+/* relance les animations */
 handleScrollEffects();
+
+/* déclenche l'animation du titre */
+
+document.body.classList.add("hero-start");
 
 },1000);
 
 },4500);
-
-});
-
-</script>
-
-<script>
-
-window.addEventListener("load", function(){
-
-const loader = document.getElementById("loader");
-
-/* durée du loader */
-setTimeout(()=>{
-
-loader.style.opacity = "0";
-
-setTimeout(()=>{
-loader.style.visibility = "hidden";
-},600);
-
-},4500); // 4.5 secondes
 
 });
 
