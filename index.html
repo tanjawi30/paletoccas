@@ -332,5 +332,21 @@ Véhicules saisis et non réclamés.</p>
     window.addEventListener("load", handleScrollEffects);
   </script>
 
+<script>
+
+window.addEventListener("load", function(){
+
+const loader = document.getElementById("loader");
+
+loader.style.opacity = "0";
+
+setTimeout(()=>{
+loader.style.visibility = "hidden";
+},600);
+
+});
+
+</script>  
+  
 </body>
 </html>
